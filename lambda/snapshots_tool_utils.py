@@ -54,7 +54,7 @@ def search_tag_copydbsnapshot(response):
     try:
 
         for tag in response['TagList']:
-            if tag['Key'] == 'CopyDBSnapshot' and tag['Value'] == 'True': return True
+            if tag['Key'] == 'CopyDBSnapshot' and (tag['Value'] == 'True' or tag['Value'] == 'true'): return True
 
     except Exception: return False
 
