@@ -309,7 +309,7 @@
 				"Role": {
 					"Fn::GetAtt": ["iamroleSnapshotsRDS", "Arn"]
 				},
-				"Runtime": "python3.7",
+				"Runtime": "python3.11",
 				"Handler": "lambda_function.lambda_handler",
 				"Timeout": 300
 			}
@@ -345,7 +345,7 @@
 				"Role": {
 					"Fn::GetAtt": ["iamroleSnapshotsRDS", "Arn"]
 				},
-				"Runtime": "python3.7",
+				"Runtime": "python3.11",
 				"Handler": "lambda_function.lambda_handler",
 				"Timeout": 300
 			}
